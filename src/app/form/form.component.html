@@ -1,0 +1,15 @@
+<!-- first we need to install form Module inside app.module file-->
+<!-- import { FormsModule } from '@angular/forms'; -->
+<p>form works!</p>
+<h1>{{UserData.user}}</h1>
+<h1>{{UserData.email}}</h1>
+<h1>{{UserData.password}}</h1>
+
+
+
+<form class="form-container" #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input type="text" ngModel name="user" placeholder="User Name" />
+    <input type="text" ngModel name="email" placeholder="User Email" />
+    <input type="password" ngModel name="password" placeholder="user Password" />
+    <button>Register</button>
+</form>
