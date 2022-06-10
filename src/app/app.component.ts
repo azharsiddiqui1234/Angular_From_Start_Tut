@@ -7,16 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  count = 0;
-  // CounterData(){
-  //   this.count++
-  // }
-  // DecreaseData(){
-  //   this.count--
-  // }
-
-  CounterData(type:string){
-    type==='increase'?this.count++:this.count--
-  }
-
+  value = "peter"
+  disable= false
 }
