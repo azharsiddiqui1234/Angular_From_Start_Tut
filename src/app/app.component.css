@@ -6,3 +6,12 @@ button{
     border-radius: 5px;
     border: 1px solid black;
 }
+
+.btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.btn-container h1{
+    padding: 0 20px;
+}

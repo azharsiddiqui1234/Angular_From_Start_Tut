@@ -1,4 +1,17 @@
-<h1>{{newdata}}</h1>
-<input  type="text" #box placeholder="Name" />
+<!-- <div class="main-container">
+    <h1 style="text-align: center;">Counter</h1>
+    <div class="btn-container">
+        <button (click)="IncreaseData()">Increase</button>
+        <h1 #countval>{{count}}</h1>
+        <button (click)="DecreaseData()">Decrease</button>
+    </div>
+</div> -->
 
-<button (click)="DisplayData(box.placeholder)" >Display Data</button>
+<div class="main-container">
+    <h1 style="text-align: center;">Counter</h1>
+    <div class="btn-container">
+        <button (click)="CounterData('increase')">Increase</button>
+        <h1 #countval>{{count}}</h1>
+        <button (click)="CounterData('decrease')">Decrease</button>
+    </div>
+</div>

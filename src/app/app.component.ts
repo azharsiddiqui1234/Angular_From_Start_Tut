@@ -7,9 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  newdata:string = "";
-  DisplayData(val:string){
-    console.log(val);
-    this.newdata= val
+  count = 0;
+  // CounterData(){
+  //   this.count++
+  // }
+  // DecreaseData(){
+  //   this.count--
+  // }
+
+  CounterData(type:string){
+    type==='increase'?this.count++:this.count--
   }
+
 }
