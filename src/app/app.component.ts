@@ -13,17 +13,32 @@ export class AppComponent {
     {
       name: 'Azhar',
       conact: 22323,
-      email: 'abc@abc.com',
+      email: [
+        {
+          personal_email: 'abc@abc.com',
+          work_email: 'azh@abc.com',
+        },
+      ],
     },
     {
       name: 'Anas',
       conact: 7878,
-      email: 'cbd@abc.com',
+      email: [
+        {
+          personal_email: 'cbd@abc.com',
+          work_email: 'ancs@abc.com',
+        },
+      ],
     },
     {
       name: 'Shoaib',
       conact: 8970,
-      email: 'vbd@abc.com',
+      email: [
+        {
+          personal_email: 'vbd@abc.com',
+          work_email: 'shb@abc.com',
+        },
+      ],
     },
   ];
 }

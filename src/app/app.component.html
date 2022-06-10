@@ -1,14 +1,12 @@
 <h1>Loop</h1>
-<!-- Simple Loop -->
-<!-- <h1 *ngFor="let users of users">{{users}}</h1> -->
-<hr/>
 
-<!-- Object Loop -->
-<div *ngFor="let users of users" style="display: flex; justify-content: space-evenly;">
-    <h1>Name : {{users.name}}</h1>
-    <hr/>
-    <h1>Contact : {{users.conact}}</h1>
-    <hr/>
-    <h1>Email : {{users.email}}</h1>
-    <hr/>
+<div *ngFor=" let users of users">
+    <ul>
+        <li>{{users.name}}</li>
+        <li>{{users.conact}}</li>
+        <ul *ngFor="let user_email of users.email">
+            <li>{{user_email.personal_email}}</li>
+            <li>{{user_email.work_email}}</li>
+        </ul>
+    </ul>
 </div>
