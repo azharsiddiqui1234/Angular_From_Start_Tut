@@ -1,3 +1,12 @@
-<h1>HEllo Azhar</h1>
-<input type="text" #inpval/>
-<button (click)="getdata(inpval)">click</button>
+<h1>Loop</h1>
+
+<div *ngFor=" let users of users">
+    <ul>
+        <li>{{users.name}}</li>
+        <li>{{users.conact}}</li>
+        <ul *ngFor="let user_email of users.email">
+            <li>{{user_email.personal_email}}</li>
+            <li>{{user_email.work_email}}</li>
+        </ul>
+    </ul>
+</div>
