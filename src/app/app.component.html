@@ -1,21 +1,10 @@
 <h1>Hello World</h1>
-<!-- <h2 *ngIf="show else elseblock">Reco Gaming</h2> -->
-<!-- <ng-template #elseblock>
-    <h1 >Reco Coder</h1>
-</ng-template> -->
-
-<!-- <div *ngIf="show; then ifblock else elseblock"></div>
-    <ng-template #ifblock>
-        <h1>Reco Gaming</h1>
-    </ng-template>
-    <ng-template #elseblock>
-        <h1 >Reco Coder</h1>
-    </ng-template> -->
-
-<div *ngIf="show==='yes'; then ifblock; else elseblock"></div>
-<ng-template #ifblock>
-  <h1>Reco Gaming</h1>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
 </ng-template>
-<ng-template #elseblock>
-  <h1>Reco Coder</h1>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">blue Color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">green Color</h1>
 </ng-template>
