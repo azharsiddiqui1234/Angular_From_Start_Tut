@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+
+.active{
+    color: green;
+}
+
+.remove{
+    color: red;
+}
