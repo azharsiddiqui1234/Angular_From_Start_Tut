@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  display = true
+  hideElement(){
+    this.display=false
+  }
+  showElement(){
+    this.display=true
+  }
+
+  toggleElement(){
+    this.display=!this.display
+  }
 }
