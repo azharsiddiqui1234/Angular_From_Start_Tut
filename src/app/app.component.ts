@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   value = "peter"
-  disable= false
+  disable= true
+  handlebtnclick(){
+    this.disable = false
+  }
 }
