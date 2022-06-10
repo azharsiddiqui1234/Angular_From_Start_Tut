@@ -1,12 +1,4 @@
-<h1>Loop</h1>
+<h1 [style.color]="color"[style.backgroundColor]="bgColor">Style Binding</h1>
 
-<div *ngFor=" let users of users">
-    <ul>
-        <li>{{users.name}}</li>
-        <li>{{users.conact}}</li>
-        <ul *ngFor="let user_email of users.email">
-            <li>{{user_email.personal_email}}</li>
-            <li>{{user_email.work_email}}</li>
-        </ul>
-    </ul>
-</div>
+<button (click)="updateColor()">Update Color</button>
+
