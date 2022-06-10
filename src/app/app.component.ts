@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  value = "peter"
-  disable= true
-  handlebtnclick(){
-    this.disable = false
-  }
+  // show=true;
+
+  // if we have sring value in our condition
+  show="no"
+
 }

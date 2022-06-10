@@ -1,6 +1,21 @@
-<h1>Hello World</h1> 
-<input type="text" value="{{value}}" disabled="disable"/>
-<br/>
-<br/>
-<input type="text" value="{{value}}" [disabled]=disable/>
-<button (click)="handlebtnclick()">click</button>
+<h1>Hello World</h1>
+<!-- <h2 *ngIf="show else elseblock">Reco Gaming</h2> -->
+<!-- <ng-template #elseblock>
+    <h1 >Reco Coder</h1>
+</ng-template> -->
+
+<!-- <div *ngIf="show; then ifblock else elseblock"></div>
+    <ng-template #ifblock>
+        <h1>Reco Gaming</h1>
+    </ng-template>
+    <ng-template #elseblock>
+        <h1 >Reco Coder</h1>
+    </ng-template> -->
+
+<div *ngIf="show==='yes'; then ifblock; else elseblock"></div>
+<ng-template #ifblock>
+  <h1>Reco Gaming</h1>
+</ng-template>
+<ng-template #elseblock>
+  <h1>Reco Coder</h1>
+</ng-template>
