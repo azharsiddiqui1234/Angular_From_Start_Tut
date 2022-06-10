@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  
-  getdata(val:any){
+  newdata:string = "";
+  DisplayData(val:string){
     console.log(val);
-    
+    this.newdata= val
   }
 }

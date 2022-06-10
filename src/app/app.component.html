@@ -1,3 +1,4 @@
-<h1>HEllo Azhar</h1>
-<input type="text" #inpval/>
-<button (click)="getdata(inpval)">click</button>
+<h1>{{newdata}}</h1>
+<input  type="text" #box placeholder="Name" />
+
+<button (click)="DisplayData(box.placeholder)" >Display Data</button>
