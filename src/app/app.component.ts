@@ -7,15 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  display = true
-  hideElement(){
-    this.display=false
-  }
-  showElement(){
-    this.display=true
+  newList:any[]=[]
+  addTask(item:string){
+    this.newList.push({id:this.newList.length,name:item})
+    console.log(this.newList);    
   }
 
-  toggleElement(){
-    this.display=!this.display
+  delete(id:number){
+    console.log(id);
+    this.newList=this.newList.filter((item)=>{
+      return(
+        item.id!==id
+      )
+    }
+    )
+    
   }
 }
