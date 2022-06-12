@@ -7,8 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  data = 10;
-  updateChild(){
-    this.data=Math.floor(Math.random()*10)
-  }
+  userDetails = [
+    {
+      name: 'anil sidhu',
+      email: 'anil@abc.com',
+    },
+    {
+      name: 'Richa Agrwaal',
+      email: 'richa@test.com',
+    },
+    {
+      name: 'jhon doe',
+      email: 'jhon@reb.com',
+    },
+    {
+      name: 'jack sparrow',
+      email: 'jack@car.com',
+    },
+  ];
 }

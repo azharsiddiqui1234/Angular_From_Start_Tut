@@ -1,4 +1,4 @@
-<h1>Send Data Parent to Child</h1>
-<app-child [data]="data"></app-child>
-
-<button (click)="updateChild()">update child data</button>
+<h1>Reuse able Components</h1>
+<ul *ngFor="let user of userDetails">
+  <app-user-details [user]="user"></app-user-details>
+</ul>
