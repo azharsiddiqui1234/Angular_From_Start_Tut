@@ -7,22 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  userDetails = [
-    {
-      name: 'anil sidhu',
-      email: 'anil@abc.com',
-    },
-    {
-      name: 'Richa Agrwaal',
-      email: 'richa@test.com',
-    },
-    {
-      name: 'jhon doe',
-      email: 'jhon@reb.com',
-    },
-    {
-      name: 'jack sparrow',
-      email: 'jack@car.com',
-    },
-  ];
+  data = ""
+  updateData(item:string){
+    console.log(item);
+    this.data=item
+  }
 }
