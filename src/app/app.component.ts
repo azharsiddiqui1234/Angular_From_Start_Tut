@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  data = ""
-  updateData(item:string){
-    console.log(item);
-    this.data=item
-  }
+  name:any;
 }

@@ -1,3 +1,4 @@
 <h1>Send data Child to Parent Components</h1>
-<h2>{{data}}</h2>
-<app-child (updateDataEvent)="updateData($event)"></app-child>
+<!-- Two way data binding means at same time data update or display krna -->
+<h2>{{name}}</h2>
+<input type="text" [(ngModel)]="name" />
