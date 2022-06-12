@@ -7,20 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  newList:any[]=[]
-  addTask(item:string){
-    this.newList.push({id:this.newList.length,name:item})
-    console.log(this.newList);    
-  }
-
-  delete(id:number){
-    console.log(id);
-    this.newList=this.newList.filter((item)=>{
-      return(
-        item.id!==id
-      )
-    }
-    )
-    
+  data = 10;
+  updateChild(){
+    this.data=Math.floor(Math.random()*10)
   }
 }

@@ -1,7 +1,4 @@
-<h1>To Do List</h1>
-<input type="text" placeholder="Enter New Task" #task>
-<button (click)="addTask(task.value)">Add Task</button>
+<h1>Send Data Parent to Child</h1>
+<app-child [data]="data"></app-child>
 
-<ul *ngFor="let newList of newList">
-    <li>{{newList.name}} <button (click)="delete(newList.id)">Delete</button></li>
-</ul>
+<button (click)="updateChild()">update child data</button>
