@@ -9,6 +9,9 @@
       autocomplete="off"
       formControlName="user"
     />
+    <span class="errmsg" *ngIf="user && user.invalid && user.touched"
+      >Empty field is not valid</span
+    >
     <input
       type="password"
       name="password"
@@ -16,6 +19,9 @@
       autocomplete="off"
       formControlName="password"
     />
-    <button>Login</button>
+    <span class="errmsg" *ngIf="password && password.invalid && password.touched"
+      >Empty field is not valid</span
+    >
+    <button [disabled]="loginForm.invalid">Login</button>
   </form>
 </div>

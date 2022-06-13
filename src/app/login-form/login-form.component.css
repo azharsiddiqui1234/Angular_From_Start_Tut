@@ -31,7 +31,7 @@
 .form-container form input {
   width: 80%;
   padding: 10px 20px;
-  margin: 20px 0;
+  margin: 20px 0 10px 0;
   outline: none;
   border: none;
   border-bottom: 1px solid #2193b0;
@@ -40,6 +40,9 @@
   color: #000;
   font-weight: 700;
 
+}
+.form-container form .errmsg{
+  color: red;
 }
 
 .form-container form button {
