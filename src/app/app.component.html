@@ -1,10 +1,9 @@
-<h1>Basic Pipes in Angular</h1>
-
-<h1>{{data}}</h1>
-<h1>{{data | uppercase}}</h1>
-<h1>{{data | lowercase}}</h1>
-
-<h1>{{today | date }}</h1>
-<h1>{{today | date : "day"}}</h1>
-<h1>{{today}}</h1>
-
+<h1>Advance Pipes in Angular</h1>
+<h2>{{ data }}</h2>
+<h2>{{ data | slice: 3:7 | uppercase }}</h2>
+<h2>{{ user | json |uppercase }}</h2>
+<h3>{{00002000.300000 | number:'2.2-3'}}</h3>
+<h3>{{20 | currency :"INR"}}</h3>
+<h3>{{20 | currency :"USD"}}</h3>
+<h3>{{20 | currency :"GBP"}}</h3>
+<h2>{{"hello how are you" | titlecase}}</h2>
