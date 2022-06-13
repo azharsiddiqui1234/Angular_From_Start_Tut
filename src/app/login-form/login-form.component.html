@@ -1,0 +1,8 @@
+<div class="form-container">
+  <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+    <h1>Login</h1>
+    <input ngModel type="text" placeholder="Enter Name" name="name" autocomplete="off" />
+    <input ngModel type="password" name="password" id="" placeholder="Enter Password" />
+    <button>click</button>
+  </form>
+</div>
