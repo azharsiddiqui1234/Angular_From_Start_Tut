@@ -10,11 +10,10 @@
 
 .form-container h1 {
   margin-bottom: 20px;
-  border-bottom: 1px solid black;
   font-weight: 700;
   letter-spacing: 2px;
-  width: 30%;
   text-align: center;
+  color: #1187a5;
 }
 
 .form-container form {
@@ -25,7 +24,7 @@
   border-radius: 20px;
   height: 500px;
   width: 500px;
-  background-color: rgba(255, 255, 255, 0.219);
+  background-color: #ffffff23;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -34,10 +33,10 @@
   padding: 10px 20px;
   margin: 20px 0;
   outline: none;
-  border: 1px solid #90b4f7;
-  border-radius: 10px;
+  border: none;
+  border-bottom: 1px solid #2193b0;
   box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.219);
+  background-color: transparent;
   color: #000;
   font-weight: 700;
 
