@@ -2,18 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { LoginFormComponent } from './login-form/login-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { RedElDirective } from './red-el.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginFormComponent,
+    RedElDirective
   ],
   imports: [
-    BrowserModule,
-    ReactiveFormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
