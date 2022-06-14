@@ -1,28 +1,17 @@
 import { Component } from '@angular/core';
+import { UserdataService } from './services/userdata.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'routing-blog';
-  memberData=[
-    {
-      name:"Azhar",
-      email:"azhar@test.com"
-    },
-    {
-      name:"Sam",
-      email:"sam@test.com"
-    },
-    {
-      name:"Jhon",
-      email:"jhon@test.com"
-    },
-    {
-      name:"Rahul",
-      email:"Rahul@test.com"
-    },
-  ]
+  users:any;
+  constructor(private userdata: UserdataService) {
+    console.log('userdata', userdata.users());
+    this.users = userdata.users();
+  }
+
 }

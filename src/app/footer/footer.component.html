@@ -1,15 +1,16 @@
 <style>
-    /* div{
-        position: relative;
-    } */
-    h1{
-        background-color: skyblue;
-        color: white;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-    }
+  div {
+    background-color: skyblue;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 </style>
+
 <div>
-    <h1>Footer</h1>
+  <h1>Footer</h1>
+  <ul *ngFor="let users of users">
+    <li>{{ users.email }}</li>
+  </ul>
 </div>
