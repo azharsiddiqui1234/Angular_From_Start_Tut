@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-blog';
+  memberData=[
+    {
+      name:"Azhar",
+      email:"azhar@test.com"
+    },
+    {
+      name:"Sam",
+      email:"sam@test.com"
+    },
+    {
+      name:"Jhon",
+      email:"jhon@test.com"
+    },
+    {
+      name:"Rahul",
+      email:"Rahul@test.com"
+    },
+  ]
 }

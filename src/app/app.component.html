@@ -1,17 +1,7 @@
-<h1>Routing</h1>
+<h1>Services</h1>
 
-<ul>
-  <li>
-    <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-  </li>
-  <li>
-    <a routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
-  </li>
-  <li>
-    <a routerLink="user" routerLinkActive="active" ariaCurrentWhenActive="page">User</a>
-  </li>
+<ul *ngFor="let data of memberData">
+  <li>{{data.name}}</li>
 </ul>
 
-
-<!-- The routed views render in the <router-outlet>-->
-<router-outlet></router-outlet>
+<app-footer></app-footer>
